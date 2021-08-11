@@ -57,6 +57,7 @@ namespace JogoDDados
             this.txtDado1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtDado1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDado1.Cursor = System.Windows.Forms.Cursors.No;
+            this.txtDado1.Enabled = false;
             this.txtDado1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDado1.Location = new System.Drawing.Point(97, 142);
             this.txtDado1.Name = "txtDado1";
@@ -70,6 +71,7 @@ namespace JogoDDados
             this.txtDado2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtDado2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDado2.Cursor = System.Windows.Forms.Cursors.No;
+            this.txtDado2.Enabled = false;
             this.txtDado2.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtDado2.Location = new System.Drawing.Point(28, 142);
             this.txtDado2.Name = "txtDado2";
@@ -104,6 +106,7 @@ namespace JogoDDados
             this.txtComputador.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtComputador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtComputador.Cursor = System.Windows.Forms.Cursors.No;
+            this.txtComputador.Enabled = false;
             this.txtComputador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtComputador.Location = new System.Drawing.Point(97, 107);
             this.txtComputador.Name = "txtComputador";
