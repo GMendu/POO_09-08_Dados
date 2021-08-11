@@ -17,6 +17,14 @@ namespace JogoDDados
             InitializeComponent();
         }
         Jogo a = new Jogo();
+        int contV = 0 , contD = 0;
+
+        private void btnPlacar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"┌──────────────────────────────────────\n│ O jogador jogou um total de {contV + contD} jogos\n├──────────────────────────────────────\n│ vitórias: {contV}\n│ derrotas: {contD}\n└──────────────────────────────────────");
+        }
+
+
         private void btnJogar_Click(object sender, EventArgs e)
         {
             a.Jogar(int.Parse(txtJogador1.Text));
@@ -25,11 +33,14 @@ namespace JogoDDados
             txtComputador.Text = a.Comp.ToString();
             if (a.vitoria)
             {
-                MessageBox.Show("Vitória");
+                contV += 1;
+                MessageBox.Show($"\n┌──────────────────────────────────────\n│ Vitória do jogador pela {contV}ª vez\n└──────────────────────────────────────");
+                
             }
             else
             {
-                MessageBox.Show("Derrota");
+                contD += 1;
+                MessageBox.Show($"\n┌──────────────────────────────────────\n│ Derrota do jogador pela {contD}ª vez\n└──────────────────────────────────────");
             }
         }
     }

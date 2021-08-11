@@ -23,7 +23,7 @@ namespace JogoDDados
                 } while (Comp == DadoJogador);
                 vitoria = true;
             }
-            else
+            else // derrota
             {
                 Comp = Dado1 + Dado2;
                 vitoria = false;
